@@ -1,0 +1,18 @@
+<!-- include this code in your webpage -->
+
+<applet code="ltScroller.class" width = 450 height = 100>
+<param name="bgcolor" value="#000000">
+<param name="text" value="#ffffff">
+<param name="horizontal" value="0">
+<param name="backwards" value="1">
+<param name="message" value="demo.txt">
+<param name="font" value="arial">
+<param name="size" value="18">
+<param name="repeat" value="100">
+<param name="line" value="0">
+<param name="pause" value="0">
+<param name="delay" value="50">
+<param name="step" value="1">
+</applet>
+
+<!-- include this code in your webpage -->

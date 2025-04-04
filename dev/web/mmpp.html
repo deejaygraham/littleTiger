@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="1st Page 2000">
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<TITLE>littleTiger's "Marvelous Mechanical Page Prototyper"</TITLE>
+<STYLE>
+<!--
+a { text-decoration:none }
+-->
+</STYLE>
+<script language="JavaScript">
+<!--
+function generatePage ( ) 
+	{
+	code = '<HTML>\n<HEAD>\n';
+	code += '<TITLE>Page Prototype</TITLE>\n';
+	code += '<META NAME="GENERATOR" CONTENT="littleTiger"></HEAD>\n';
+	code += '<BODY BGCOLOR="' + inputform.background.value + '" TEXT="' + inputform.text.value + '\n';
+	code += '" LINK="' + inputform.link.value + '">\n';
+	code += '<FONT FACE="' + inputform.font.value + '">\n';
+	code += '<CENTER><H1>Lorem Ipsum</H1></CENTER>\n';
+	code += '<P>\n';
+	code += 'dolor sit amet consectetuer adipiscing elit, sed diem nonummy nibh\n';
+	code += 'euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.\n';
+	code += ' Ut wisis enim ad minim veniam, quis nostrud exerci tution ullam corper \n';
+	code += 'suscipit lobortis nisi ut aliquip ex ea commodo consequat. Duis te feugi \n';
+	code += 'facilisi. Duis autem dolor in hendrerit in vulputate velit esse molestie \n';
+	code += 'consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et\n';
+	code += ' iusto odio dignissim qui blandit praesent luptatum zzril delenit au gue \n';
+	code += ' duis dolore te feugat nulla facilisi.\n<br><br><br><center>';
+	code += '<FONT COLOR="' + inputform.link.value + '"><u>This is a hyperlink</u></font> &nbsp&nbsp&nbsp\n';
+	code += '<FONT COLOR="' + inputform.alink.value + '"><u>This is an active hyperlink</u></font>&nbsp&nbsp&nbsp\n';
+	code += '<FONT COLOR="' + inputform.vlink.value + '"><u>This is a visited hyperlink</u></font><br><br><br></center>\n';
+	code += '<p>If you want to tinker with the colours some more,&nbsp';
+	code += 'close this browser window and try again.\n';
+	code += '</FONT>\n';
+	code += '<P><CENTER>\n';
+	code += '</BODY></HTML>\n';
+
+	//alert ( code );
+
+	newWindow = window.open ( );
+
+	newDocument = newWindow.document;
+	newDocument.write ( code );
+	}
+//--> 
+</SCRIPT>
+</HEAD>
+<BODY bgcolor="#cccc99" text="#003333" link="#6666ff" alink="#ffffcc" vlink="#333333">
+
+<!-- navigation area -->
+<table cellspacing="0" border="0" align="center" width="100%">
+<tr align="right">
+<td></td>
+<td nowrap><FONT FACE="Verdana,Arial,Helvetica">
+<a href="../index.html"><img width="120" height="150" src="../images/tinytiger.gif" border="0" alt="home"></a><br>
+<a href="../index.html">home</a> | <a href="../about.html">about</a> | <a href="../news.html">news</a> | <a href="./index.html">stuff</a>
+| <a href="../gallery/index.html">gallery</a> | <a href="../contact/index.html">contact us</a><td>
+</FONT></tr>
+</table>
+<!-- /navigation area -->
+
+<br><br><br>
+
+<!-- page content -->
+<table width="75%" align="center" border="0">
+<tr><td>
+<FONT FACE="Verdana,Arial,Helvetica">
+<!-- page content -->
+<h2>littleTiger's Page Prototyper</h2><p>
+
+Hey, wouldn't it be cool to design a colour scheme for a website and see how it will look before 
+committing it to html code?  Well now you can! Through the magic of javascript and 
+at great expense we bring you <i>The Marvellous Mechanical Page Prototyper</i>.<br>
+<p>Fill in the form below using hex values for the <a href="./palette.html">colours</a>.<p> 
+Hit the "Show Me" button to display a test page using your colour scheme.
+If you don't like the results, close the window and tinker some more.<p>  
+</FONT>
+</td></tr>
+</table>
+
+<FORM NAME="inputform">
+<TABLE with="75%" align="center" border="0" CELLPADDING="5">
+<TR><TD><FONT FACE="Verdana,Arial,Helvetica">Background :</font></TD><TD><FONT FACE="Verdana,Arial,Helvetica">Text :</font></TD></TR>
+<TR><TD><INPUT TYPE="TEXT" NAME="background" value="FFFFFF"></TD><TD><INPUT TYPE="TEXT" NAME="text" value="000000"></TD></TR>
+<TR><TD><FONT FACE="Verdana,Arial,Helvetica">Link :</font></TD><TD><FONT FACE="Verdana,Arial,Helvetica">Active Link :</font></TD><TD><FONT FACE="Verdana,Arial,Helvetica">Visited Link :</font></TD></TR>
+<TR><TD><INPUT TYPE="TEXT" NAME="link" value="0000CC"></TD><TD><INPUT TYPE="TEXT" NAME="alink" value="CC0000"><TD><INPUT TYPE="TEXT" NAME="vlink" value="660000"></TD></TR>
+<TR><TD><FONT FACE="Verdana,Arial,Helvetica">Font Name :</font></TD></TR>
+<TR><TD><INPUT TYPE="TEXT" NAME="font" value="Times"></TD><TD></TD><TD><INPUT TYPE="BUTTON" VALUE="Show Me!" onclick="generatePage ( );"></TD></TR>
+</TR>
+</TABLE>
+</FORM>
+
+</BODY>
+</HTML>
+
